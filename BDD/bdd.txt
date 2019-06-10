@@ -1,0 +1,23 @@
+USE [app]
+GO
+/****** Object:  Table [dbo].[equipo]    Script Date: 06/10/2019 12:44:37 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[equipo](
+	[cod_ing] [int] IDENTITY(1,1) NOT NULL,
+	[nombre_equipo] [nchar](10) NULL,
+	[cod_equipo] [nchar](10) NULL
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[app]    Script Date: 06/10/2019 12:44:37 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[app](
+	[cod_app] [nchar](10) NULL,
+	[nombre_dep] [nchar](10) NULL
+) ON [PRIMARY]
+GO
